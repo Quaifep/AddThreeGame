@@ -1,5 +1,5 @@
 # Author: Paul Quaife
-# Date: 2/23/2021
+# Date: 3/1/2021
 # Description: Plays a game that allows two players to play a game in which they alternately choose numbers from 1-9.
 
 def __init__(self):
