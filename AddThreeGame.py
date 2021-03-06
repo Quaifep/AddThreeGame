@@ -2,7 +2,7 @@
 # Date: 3/1/2021
 # Description: Plays a game that allows two players to play a game in which they alternately choose numbers from 1-9.
 
-class AddThreeGame():
+class AddThreeGame:
     pass
 
     def __init__(self):
@@ -14,14 +14,16 @@ class AddThreeGame():
 
     def get_current_state(self):
         """returns current state of game"""
+        game = AddThreeGame()
+        state = game.get_current_state()
 
-        if self == "UNFINISHED":
+        if state == "UNFINISHED":
             print("No one reached 15. Get ready for next round.")
-        elif self == "FIRST_WON":
+        elif state == "FIRST_WON":
             print("First player won!!!")
-        elif self == "SECOND_WON":
+        elif state == "SECOND_WON":
             print("Second player won!!!")
-        elif self == "DRAW":
+        elif state == "DRAW":
             print("Game ends in draw")
 
         return self.__str
