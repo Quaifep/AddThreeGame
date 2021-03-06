@@ -2,9 +2,9 @@
 # Date: 3/1/2021
 # Description: Plays a game that allows two players to play a game in which they alternately choose numbers from 1-9.
 
-class AddThreeGame(object):
+class AddThreeGame():
     pass
-    game = AddThreeGame()
+
     def __init__(self):
         """initial def that assigns players."""
         self.__p1 = 0
@@ -46,8 +46,3 @@ class AddThreeGame(object):
             self.__str = "SECOND_WON"
         if len(self.__played) == 9:
             self.__str = "DRAW"
-        while True:
-            x = int(input("Player 1 please enter a number: "))
-        while True:
-            if game.make_move("first", x):
-                else x = int("Invalid input! Player 2 please re-enter a number: ")
