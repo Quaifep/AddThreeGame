@@ -2,6 +2,8 @@
 # Date: 3/1/2021
 # Description: Plays a game that allows two players to play a game in which they alternately choose numbers from 1-9.
 
+class AddThreeGame:
+
 def __init__(self):
     """initial def that assigns players."""
     self.__p1 = 0
@@ -35,19 +37,20 @@ def make_move(self, pl, x):
         self.__str = "DRAW"
     return True
 
-    while True:
-        x = int(input("Player 1 please enter a number: "))
-    while True:
-        if game.make_move("first", x) == True:
-            else x = int(input("Invalid input! Player 2 please re-enter a number: "))
+game = str(AddThreeGame())
+while True:
+    x = int(input("Player 1 please enter a number: "))
+while True:
+    if game.make_move("first", x) == True:
+        else x = int(input("Invalid input! Player 2 please re-enter a number: "))
 
 state = game.get_current_state()
-    if state == "UNFINISHED":
-        print("No one reached 15. Get ready for next round.")
-    elif state == "FIRST_WON":
-        print("First player won!!!")
-    elif state == "SECOND_WON":
-        print("Second player won!!!")
-    elif state == "DRAW":
-        print("Game ends in draw")
+if state == "UNFINISHED":
+    print("No one reached 15. Get ready for next round.")
+elif state == "FIRST_WON":
+    print("First player won!!!")
+elif state == "SECOND_WON":
+    print("Second player won!!!")
+elif state == "DRAW":
+    print("Game ends in draw")
 
