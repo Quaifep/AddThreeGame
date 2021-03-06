@@ -18,13 +18,13 @@ class AddThreeGame:
         state = game.get_current_state()
 
         if state == "UNFINISHED":
-            print("No one reached 15. Please try again")
+            return True
         elif state == "FIRST_WON":
-            print("First player won.")
+            return True
         elif state == "SECOND_WON":
-            print("Second player won.")
+            return True
         elif state == "DRAW":
-            print("Game ends in draw.")
+            return True
 
         return self.__str
 
